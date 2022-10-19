@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+html,body{
+    margin: 0px;
+}
+body{
+    display: flex;
+    flex-direction: row;
+}
+.background-image{
+    background-image: url(https://images.unsplash.com/photo-1536152470836-b943b246224c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=738&q=80);
+    background-position: center;
+    width: 30vw;
+    height: 100vh;
+    
+}
+.credit{
+    position: relative;
+    text-align: center;
+    margin: 550px auto;
+    color: aqua;
+}
+a{
+    color: orange;
+    text-decoration: none;
+}
+.form{
+    background-color: rgb(248, 233, 233);
+    height: 100vh;
+    width: 70vw;
+}
+.logo-back{
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.238);
+    
+}
+.logo-back>div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px auto;
+}
+.logo-back>div>div{
+    margin-right: 40px;
+}
+h1{
+    font-size: 60px;
+    font-family: 'Comforter Brush', cursive;
+    color: orange;
+    font-weight: lighter;
+    text-align: center;
+    padding-right: 30px;
+}
+h4{
+    font-family: 'Rajdhani', sans-serif;
+}
+a:hover{
+    color:blanchedalmond;
+}
+
+/*form style */
+.form>div{
+    margin: 80px auto;
+    text-align: center;
+    max-width: 80%;
+}
+form{
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px 5px 2px rgba(128, 128, 128, 0.456);
+    padding: 10px;
+
+}
+input{
+    height: 30px;
+    border-radius: .3rem;
+    border: 1px solid rgba(128, 128, 128, 0.523);
+    accent-color: rgb(236, 68, 12);
+    
+}
+
+form>div:first-child{
+    margin: 30px auto;
+    
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+form>div>div{
+    
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 10px;
+}
+
+h2{
+    font-size: 50px;
+    font-family: 'Stick No Bills', sans-serif;
+}
+h3{
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: 'Rajdhani', sans-serif;
+}

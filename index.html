@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Sign-in</title>
+    <link rel="stylesheet" href="meyers_reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-image">
+        <div class="logo-back">
+           <div>
+                <img src="image/logo.svg" alt="fastrack logo">
+                <h1>fastrack</h1>
+           </div> 
+        </div>
+        
+        <div class="credit">
+            <h4>Photo by <span><a href="https://unsplash.com/@aronvisuals">Aron Visuals</a></span> on <span><a href="https://unsplash.com/">Unsplash</a></span></h4>
+        </div>
+    </div>
+    <div class="form">
+        <div class="form-heading">
+            <h2 class="sign-up">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab cupiditate molestiae</h2>
+            <h3>Sign-in and enjoy our service</h3>
+            
+        </div>
+        <form method="post" action="http://httpbin.org/post" > 
+            <div>
+                <div>
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="name" id="first-name" required>
+                </div>
+                <div>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="name" id="last-name" required>
+                </div>
+                <div>
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+                <div>
+                    <label for="password">Password*</label>
+                    <input type="password" name="password" id="password" required minlength="8">
+                </div>
+                <div>
+                    <label for="password">Confirm Password*</label>
+                    <input type="password" name="password" id="password" required maxlength="15">
+                </div>
+            </div>
+            <button type="submit">Create Account</button>
+            <div>
+                <input type="checkbox" name="notification" id="notification" checked>
+                <label for="notification">Subscribe for latest news</label>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
