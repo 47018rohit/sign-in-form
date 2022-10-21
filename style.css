@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
 
+:root{
+    --rajdhani: 'Rajdhani', sans-serif;
+}
 html,body{
     margin: 0px;
 }
@@ -19,17 +22,12 @@ body{
 .credit{
     position: relative;
     text-align: center;
-    margin: 550px auto;
+    margin: 600px auto;
     color: aqua;
 }
 a{
     color: orange;
     text-decoration: none;
-}
-.form{
-    background-color: rgb(248, 233, 233);
-    height: 100vh;
-    width: 70vw;
 }
 .logo-back{
     width: 100%;
@@ -55,40 +53,53 @@ h1{
     padding-right: 30px;
 }
 h4{
-    font-family: 'Rajdhani', sans-serif;
+    font-family: var(--rajdhani);
 }
 a:hover{
     color:blanchedalmond;
 }
 
 /*form style */
+.form{
+    background-color: #133a5b;
+    height: 100vh;
+    width: 70vw;
+    color: #d9d9d9;
+}
 .form>div{
     margin: 80px auto;
     text-align: center;
     max-width: 80%;
 }
+h3{
+    color: orange;
+}
 form{
     width: 80%;
-    margin: 20px auto;
+    margin: 10px auto;
     border-radius: 0.5rem;
-    box-shadow: 4px 4px 5px 2px rgba(128, 128, 128, 0.456);
+    box-shadow: 4px 4px 5px 2px rgba(0, 0, 0, 0.317);
     padding: 10px;
-
+    background-color: #045a81;
+    
 }
 input{
     height: 30px;
     border-radius: .3rem;
-    border: 1px solid rgba(128, 128, 128, 0.523);
-    accent-color: rgb(236, 68, 12);
+    border: none;
+    accent-color: orange;
+}
+input:not(:first-child):focus{
+    box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.491);
     
 }
-
 form>div:first-child{
-    margin: 30px auto;
-    
+    margin: 40px auto;
+    text-transform: uppercase;
     width: 90%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap:wrap;
+    font-family: var(--rajdhani);
     
 }
 form>div>div{
@@ -98,13 +109,43 @@ form>div>div{
     width: 250px;
     margin: 10px;
 }
-
+button{
+    display: block;
+    margin: 10px auto;
+    width: 200px;height: 50px;
+    font-size: 20px;
+    font-family: var(--rajdhani);
+    border: none;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.491);
+    background-color: #07487d;
+    color: #d9d9d9;
+    border-radius: .5rem;
+}
+button:hover{
+    box-shadow: 1px 1px 2px 1px rgba(100, 192, 253, 0.491);
+    background-color: #133a5b;
+    color: orange;
+}
 h2{
     font-size: 50px;
     font-family: 'Stick No Bills', sans-serif;
 }
 h3{
-    margin-top: 20px;
+    margin-top: 20px;margin-bottom: 0px;
     font-size: 30px;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: var(--rajdhani);
+}
+form>div:last-child{
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    gap: 5%;
+    font-family: var(--rajdhani);
+    width: 20%;
+}
+footer{
+    font-family: var(--rajdhani);
+    margin: 210px auto;
+    text-align: center;
 }
