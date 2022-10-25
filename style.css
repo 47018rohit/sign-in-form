@@ -69,6 +69,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     flex: 1;
+    overflow:auto;
 }
 .form>div{
     margin: 80px auto;
